@@ -1,0 +1,19 @@
+<h1>My list</h1>
+<ul id="parent">
+    <li id="first">list-1</li>
+    <li>list-2</li>
+    <li>list-3</li>
+    <li>list-4</li>
+    <li>list-5</li>
+</ul>
+
+<script>
+    document.getElementById('first').addEventListener('click', function(event) {
+        console.log("first item clicked")
+        event.stopPropagation();
+    })
+
+    document.getElementById('parent').addEventListener('click', function(event) {
+        console.log("parent item clicked")
+    })
+</script>
